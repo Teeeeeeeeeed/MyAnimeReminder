@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import {Layout} from '../Layout';
 import {Helmet} from 'react-helmet';
 import Navi from '../Layout/Navi';

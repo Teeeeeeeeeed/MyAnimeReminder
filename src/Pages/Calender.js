@@ -2,7 +2,6 @@ import React from 'react';
 import CalenderApp from '../Components/CalenderApp.jsx';
 import { Layout } from '../Layout';
 import { Helmet } from 'react-helmet';
-import { motion } from 'framer-motion';
 import Navi from '../Layout/Navi.jsx';
 import Footer from '../Layout/Footer';
 
