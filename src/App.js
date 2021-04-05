@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Calender, About, Trending, Help, Login } from './Pages';
+
+import Footer from './Layout/Footer.jsx';
+
+import {
+  TransitionGroup,
+  CSSTransition
+} from "react-transition-group";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router >
+        <Route render={({location}) =>(
+          <TransitionGroup>
+            <CSSTransition 
+            timeout={300} 
+            classNames={'fade'} 
+            key={location.key}
+            >
+              <Switch location={location} >
+                <Route path='/Trending' component={Trending} />
+                <Route path='/Calender' component={Calender} />
+                <Route path='/' component={Login} />
+                <Route path='/Help' component={Help} />
+                <Route path='/About' component={About} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+          )}/>
+        </Router>
+    </>
   );
 }
 
