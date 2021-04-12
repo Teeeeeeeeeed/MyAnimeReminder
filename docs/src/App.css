@@ -1,0 +1,336 @@
+.App {
+  text-align: center;
+}
+
+/*     Navigation Menu     */
+.navItem{
+  padding-top:10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.navBar{
+  padding-top: 0px !important;
+  background-color: rgba(0,0,0,0);;
+}
+.activeLink{
+  background-color: rgba(0,0,0,0.08);
+}
+a {
+  color: black !important;
+  text-decoration: none !important
+}
+/*    Footer Styling     */
+.footer {
+  padding-top:20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom:0;
+  width:100%;
+  position:absolute;
+}
+.logo {
+  max-width: 50px;
+  max-height:auto;
+  transition-delay: 0.05s;
+  transition-duration: 0.25s;
+}
+.logos{
+  display: flex;
+  justify-content: center;
+}
+
+.logo:hover{
+  transition-delay: 0.05s;
+  transition-duration: 0.25s;
+  max-width: 65px;
+}
+
+/* Trending Page styling*/
+.Trending {
+  background-image: url('img/Attackontitan.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: top center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+}
+.TrendCards{
+  height:101px !important;
+  width:90% !important;
+  flex-direction: row !important;
+  justify-content: center;
+  margin:5%;
+}
+.TrendCardsImg{
+  width: 100px !important;
+  height:100px !important;
+  object-fit:cover !important;
+}
+.TrendingTitle{
+  text-align: center;
+}
+/*     Calender Styling     */
+.Calender {
+  background-image: url('img/Haikyuu2.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: top center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+}
+.CalenderDay{
+  background-color:white;
+}
+.Login {
+  background-image: url('img/Yourname.gif');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: top center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+}
+.login-section{
+  background-color: rgba(232,231,231,0.95);
+  box-shadow: 7px 7px 16px 8px rgba(0,0,0,0.26);
+  border-radius: 10px 10px 10px 10px;
+  padding:3% !important;
+  margin-top:5% !important;
+}
+.register-section{
+  background-color: rgba(232,231,231,0.95);
+  box-shadow: 7px 7px 16px 8px rgba(0,0,0,0.26);
+  border-radius: 10px 10px 10px 10px;
+  padding:3% !important;
+  margin-top:2% !important;
+}
+.Profile{
+}
+.search-label {
+  text-align: center;
+  padding:0% !important;
+}
+#search-input{
+  width:100%;
+}
+
+
+.Help {
+  background-image: url('img/Myheroacademia2.gif');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: top center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+}
+.About {
+  background-image: url('img/Weatheringwithyou.gif');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: top center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+}
+
+.loginForm{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.About-content{
+  height:auto;
+  weight:auto;
+}
+.Login-content{
+  height:auto;
+  weight:auto;
+}
+.About-heading{
+  text-align: center;
+}
+.About-right{
+  text-align: end;
+}
+
+
+/* FONT IMPORTS */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+.icon {
+  font-family: 'Material Icons', serif;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+/* GENERAL */
+
+header {
+  display: block;
+  width: 100%;
+  padding: 1.75em 0;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--neutral-color);
+}
+.text {
+  font-family: 'Josefin Sans', sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+#root{
+  height: 100%  ;
+  width: 100% ;
+}
+div {
+  width: 100% ;
+}
+/*   animation    */
+.fade-appear 
+.fade-enter {
+  opacity: 0.5;
+  z-index: 1;
+}
+.fade-appear-active 
+.fade-enter 
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms linear ;
+}
+/* Calender */
+
+.noEvent{
+  padding:20%;
+}
+.number{
+  margin-bottom:1px;
+  border-bottom:1px solid black;
+  padding-left: 30%;
+  padding-right:30%;
+}
+.tableShadow{
+  background-color: rgba(232,231,231,0.95);
+  box-shadow: 7px 7px 16px 8px rgba(0,0,0,0.26);
+  border-radius: 10px 10px 10px 10px;
+  
+}
+.container{
+  padding:0% !important;
+}
+.row{
+  margin:0% !important;
+}
+.col{
+  margin:0% !important;
+}
+.icon:hover{
+  background-color: rgba(212,210,210,1);
+  cursor:pointer;
+  transition:0.5s;
+}
+/* Loading Animation for Search Bar*/
+.show{
+  transition:0.1s;
+  opacity:1;
+}
+.hide{
+  transition:0.1s;
+  opacity:0;
+}
+.search-loading{
+  height:20vh;
+  width:auto;
+  position: absolute;
+  left:40%;
+  top:40%;
+}
+.search-container{
+  background-color: rgba(232,231,231,0.95);
+  padding:1% !important;
+  box-shadow: 7px 7px 16px 8px rgba(0,0,0,0.26);
+  border-radius: 10px 10px 10px 10px;
+
+}
+/* search results*/
+.search{
+  background-color: rgba(232,231,231,0.95);
+  padding:1%;
+  transition:0.1s;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(232,231,231,0.95); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.search:hover{
+  background-color:rgba(210, 208, 208, 0.95);
+  transition:0.1s;
+}
+.scroll{
+  height:55vh;
+  overflow-y:auto;
+}
+.search-img{
+  width:100%;
+  height:auto;
+}
+/*      alert box     */
+.alert{
+  position:absolute !important;
+  top:30%;
+  left:25%;
+  background-color: rgba(189, 220, 232, 1);
+  width:50% !important;
+  padding:5% !important;
+  box-shadow: 7px 7px 16px 8px rgba(0,0,0,0.26);
+  border-radius: 10px 10px 10px 10px;
+}
